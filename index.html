@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script >
+            const ha = require('fs')
+            let words = ''
+            $(document).ready(function(){
+                $('.party').click(function(){
+                    words = document.getElementById('inputt')
+                })
+            })
+            ha.writeFile('test.txt',words, Er =>{
+                if(Er){
+                    console.Er;
+                    return;
+                }
+            })
+
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="inputt">
+        <button class="party">pls press after input</button>
+        <a href="test.txt" download="the_text.txt">pls click</a>
+    </body>
+</html>
