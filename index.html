@@ -3,21 +3,15 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script >
-            const ha = require('fs')
-            let words = ''
-            $(document).ready(function(){
-                $('.party').click(function(){
-                    words = document.getElementById('inputt')
-                })
-            })
-            ha.writeFile('test.txt',words, Er =>{
-                if(Er){
-                    console.Er;
-                    return;
-                }
-            })
-
-
+            function yolo(){
+                const yo = document.getElementById('inputt').Value
+                const go = new Blob([yo],{type:'text/plain'})
+                const lin = document.createElement('a')
+                lin.href = window.URL.createObjectURL(go)
+                lin.download = 'aaah.txt'
+                document.body.append(lin)
+                lin.click()
+            }
         </script>
     </head>
     <body>
